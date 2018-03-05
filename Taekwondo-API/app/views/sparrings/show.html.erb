@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Matchnumber:</strong>
+  <%= @sparring.matchnumber %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @sparring.start %>
+</p>
+
+<p>
+  <strong>Competitornumber:</strong>
+  <%= @sparring.competitornumber %>
+</p>
+
+<%= link_to 'Edit', edit_sparring_path(@sparring) %> |
+<%= link_to 'Back', sparrings_path %>

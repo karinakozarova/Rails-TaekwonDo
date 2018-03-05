@@ -1,0 +1,32 @@
+<%= form_with(model: sparring, local: true) do |form| %>
+  <% if sparring.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sparring.errors.count, "error") %> prohibited this sparring from being saved:</h2>
+
+      <ul>
+      <% sparring.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :matchnumber %>
+    <%= form.number_field :matchnumber, id: :sparring_matchnumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start %>
+    <%= form.datetime_select :start, id: :sparring_start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :competitornumber %>
+    <%= form.number_field :competitornumber, id: :sparring_competitornumber %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

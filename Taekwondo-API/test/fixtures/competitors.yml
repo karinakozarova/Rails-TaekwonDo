@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team: MyString
+  belt: MyString
+  age: 1
+
+two:
+  team: MyString
+  belt: MyString
+  age: 1

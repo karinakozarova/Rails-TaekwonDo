@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  matchnumber: 1
+  start: 2018-03-05 18:28:58
+  competitornumber: 1
+
+two:
+  matchnumber: 1
+  start: 2018-03-05 18:28:58
+  competitornumber: 1

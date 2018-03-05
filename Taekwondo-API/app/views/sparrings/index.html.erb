@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sparrings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Matchnumber</th>
+      <th>Start</th>
+      <th>Competitornumber</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sparrings.each do |sparring| %>
+      <tr>
+        <td><%= sparring.matchnumber %></td>
+        <td><%= sparring.start %></td>
+        <td><%= sparring.competitornumber %></td>
+        <td><%= link_to 'Show', sparring %></td>
+        <td><%= link_to 'Edit', edit_sparring_path(sparring) %></td>
+        <td><%= link_to 'Destroy', sparring, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sparring', new_sparring_path %>

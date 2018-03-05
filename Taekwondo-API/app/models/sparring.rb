@@ -1,0 +1,2 @@
+class Sparring < ApplicationRecord
+end

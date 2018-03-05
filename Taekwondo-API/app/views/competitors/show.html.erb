@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @competitor.team %>
+</p>
+
+<p>
+  <strong>Belt:</strong>
+  <%= @competitor.belt %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @competitor.age %>
+</p>
+
+<%= link_to 'Edit', edit_competitor_path(@competitor) %> |
+<%= link_to 'Back', competitors_path %>
